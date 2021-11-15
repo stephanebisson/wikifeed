@@ -10,7 +10,7 @@
         name: 'Feed',
         components: { FeedLine },
         computed: {
-            feedLines: function() { return this.shuffle(data).slice(25); }
+            feedLines: function() { return this.shuffle(data).slice(0, 25); }
         },
         methods: {
             shuffle(arr) {
