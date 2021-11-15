@@ -28,8 +28,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install and Build
         run: |
+          cd viewer
           npm install
           npm run build
+          cd ..
 
       - name: Get branch name
         id: branch-name
